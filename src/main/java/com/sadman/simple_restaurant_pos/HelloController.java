@@ -16,7 +16,7 @@ public class HelloController {
     @FXML
     protected void onHelloButtonClick() throws ClassNotFoundException {
 
-        welcomeText.setText("Welcome to JavaFX Application!");
+        welcomeText.setText("Welcome to POS Application!");
         random();
     }
 
@@ -24,7 +24,7 @@ public class HelloController {
         Class.forName("com.mysql.cj.jdbc.Driver");
         Statement stmt = null;
         try {
-            String query = "Select * from product";
+            String query = "Select * from items_menu";
 
             System.out.println(query);
 
